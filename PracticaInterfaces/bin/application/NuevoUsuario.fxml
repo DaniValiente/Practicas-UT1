@@ -1,0 +1,39 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?><AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SampleController" >
+<children>
+<Text layoutX="35.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad" wrappingWidth="123.13671875" />
+<Text layoutX="35.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="123.13671875" />
+<Text layoutX="35.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" wrappingWidth="123.13671875" />
+<Text layoutX="35.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección" wrappingWidth="123.13671875" />
+<Text layoutX="24.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código Postal" wrappingWidth="123.13671875" />
+<Text layoutX="24.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de Nacimiento" wrappingWidth="123.13671875" />
+<Text layoutX="24.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de teléfono" wrappingWidth="123.13671875" />
+<Text layoutX="35.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuevo Contacto" wrappingWidth="226.13671875">
+<font>
+<Font name="System Bold Italic" size="20.0" />
+</font>
+</Text>
+<Text layoutX="35.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Personales" wrappingWidth="123.13671875">
+<font>
+<Font name="System Italic" size="12.0" />
+</font>
+</Text>
+<TextField fx:id="nombre" layoutX="322.0" layoutY="71.0" />
+<TextField fx:id="direccion" layoutX="322.0" layoutY="151.0" />
+<TextField fx:id="apellidos" layoutX="322.0" layoutY="110.0" />
+<TextField fx:id="ciudad" layoutX="322.0" layoutY="188.0" />
+<TextField fx:id="codigopostal" layoutX="322.0" layoutY="228.0" onAction="#SoloNumeros" />
+<TextField fx:id="numerodetelefono" layoutX="329.0" layoutY="318.0" onAction="#SoloNumeros" />
+<DatePicker fx:id="fechadenacimiento" layoutX="316.0" layoutY="274.0" />
+<Button fx:id="delete" layoutX="426.0" layoutY="361.0" mnemonicParsing="false" text="Delete" />
+<Button fx:id="save" layoutX="510.0" layoutY="361.0" mnemonicParsing="false" text="Save" />
+</children>
+</AnchorPane>
+
+
