@@ -2,14 +2,13 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="639.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AgendaController">
    <children>
-      <ListView layoutX="34.0" layoutY="62.0" prefHeight="354.0" prefWidth="172.0" style="-fx-border-style: solid;" />
       <AnchorPane layoutX="228.0" layoutY="62.0" prefHeight="354.0" prefWidth="382.0" style="-fx-border-style: solid;">
          <children>
             <Label layoutX="27.0" layoutY="33.0" text="Nombre" />
@@ -19,19 +18,19 @@
             <Label layoutX="30.0" layoutY="136.0" text="Ciudad" />
             <Label layoutX="30.0" layoutY="201.0" text="Fecha Nacimiento" />
             <Label layoutX="30.0" layoutY="236.0" text="Teléfono" />
-            <Label layoutX="191.0" layoutY="33.0" text="--" />
-            <Label layoutX="191.0" layoutY="67.0" text="--" />
-            <Label layoutX="191.0" layoutY="100.0" text="--" />
-            <Label layoutX="191.0" layoutY="136.0" text="--" />
-            <Label layoutX="191.0" layoutY="169.0" text="--" />
-            <Label layoutX="191.0" layoutY="201.0" text="--" />
-            <Label layoutX="191.0" layoutY="236.0" text="--" />
-            <Button fx:id="Añadir" layoutX="45.0" layoutY="296.0" mnemonicParsing="false"  prefHeight="35.0" prefWidth="66.0" style="-fx-border-style: solid;" text="Añadir" />
-            <Button layoutX="149.0" layoutY="296.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" style="-fx-border-style: solid;" text="Editar" />
-            <Button layoutX="257.0" layoutY="296.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" style="-fx-border-style: solid;" text="Borrar" />
+            <Label fx:id="Nombre" layoutX="191.0" layoutY="33.0" text="--" />
+            <Label fx:id="Apellido" layoutX="191.0" layoutY="67.0" text="--" />
+            <Label fx:id="Calle" layoutX="191.0" layoutY="100.0" text="--" />
+            <Label fx:id="Ciudad" layoutX="191.0" layoutY="136.0" text="--" />
+            <Label fx:id="CodPostal" layoutX="191.0" layoutY="169.0" text="--" />
+            <Label fx:id="Fecha" layoutX="191.0" layoutY="201.0" text="--" />
+            <Label fx:id="Tlf" layoutX="191.0" layoutY="236.0" text="--" />
+            <Button fx:id="Añadir" layoutX="45.0" layoutY="296.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="66.0" style="-fx-border-style: solid;" text="Añadir" />
+            <Button fx:id="Guardar" layoutX="158.0" layoutY="296.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" style="-fx-border-style: solid;" text="Editar" />
+            <Button fx:id="Borrar" layoutX="266.0" layoutY="296.0" mnemonicParsing="false" onAction="#borrar" prefHeight="35.0" prefWidth="66.0" style="-fx-border-style: solid;" text="Borrar" />
          </children>
       </AnchorPane>
-      <Text layoutX="34.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERSONAS">
+      <Text layoutX="32.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERSONAS">
          <font>
             <Font name="System Bold Italic" size="16.0" />
          </font>
@@ -41,5 +40,6 @@
             <Font name="System Bold Italic" size="16.0" />
          </font>
       </Text>
+      <TableView fx:id="tblPersonas" layoutX="32.0" layoutY="62.0" prefHeight="354.0" prefWidth="170.0" />
    </children>
 </AnchorPane>

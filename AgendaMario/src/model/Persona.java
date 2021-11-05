@@ -7,17 +7,19 @@ public class Persona {
 	private String Calle;
 	private String Ciudad;
 	private String CodigoP;
+	private String Fecha;
 	private String Tlf;
 	
-	Persona(){
+	public Persona(){
 		
 	}
 	
-	Persona(String n, String a, String ca, String ci,String Cp,String tlf){
+	Persona(String n, String a, String ca, String ci,String Cp,String f,String tlf){
 		this.Nombre=n;
 		this.Apellido=a;
 		this.Calle=ca;
 		this.Ciudad=ci;
+		this.Fecha=f;
 		this.CodigoP=Cp;
 		this.Tlf=tlf;
 	}
@@ -33,6 +35,9 @@ public class Persona {
 	}
 	public void setCiudad(String ciudad) {
 		Ciudad = ciudad;
+	}
+	public void setFecha(String fecha) {
+		Fecha = fecha;
 	}
 	public void setCodigoP(String codigoP) {
 		CodigoP = codigoP;
@@ -52,6 +57,9 @@ public class Persona {
 	}
 	public String getCiudad() {
 		return Ciudad;
+	}
+	public String getFecha() {
+		return Fecha;
 	}
 	public String getCodigoP() {
 		return CodigoP;
