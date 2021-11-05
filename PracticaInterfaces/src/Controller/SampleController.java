@@ -1,19 +1,15 @@
 package Controller;
-
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
+
 public class SampleController  {
 	
 	@FXML
-	private  Button editar;
+	private  Button clean;
 	@FXML
 	private  TextField nombre;
 	@FXML
@@ -29,20 +25,25 @@ public class SampleController  {
 	@FXML
 	private  TextField numerodetelefono;
 	
-	public void editar(ActionEvent event) { 
+	
+	
+	public void clean(ActionEvent event) { 
 	nombre.setText("");
+	nombre.requestFocus();
 	apellidos.setText("");
 	direccion.setText("");
 	ciudad.setText("");
 	codigopostal.setText("");
 	numerodetelefono.setText("");
-	
+	fechadenacimiento.getEditor().clear();
 	
 	}
+}
+     
 
 	
-	}
 	
+
 
 	
 	
