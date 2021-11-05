@@ -5,11 +5,13 @@ import javafx.scene.control.CheckBox;
 public class Persona {
 	private String Nombre;
     private String Apellidos;
+    private CheckBox CB;
 
 
-    public Persona(String Nombre, String Apellidos) {
+    public Persona(String Nombre, String Apellidos, CheckBox CB) {
         this.Nombre = Nombre;
         this.Apellidos = Apellidos;
+        this.CB = new CheckBox();
     }
 
     public String getNombre() {
@@ -27,4 +29,12 @@ public class Persona {
     public void setApellidos(String lastName) {
         this.Apellidos = lastName;
     }
+
+	public CheckBox getCB() {
+		return CB;
+	}
+
+	public void setCB(CheckBox CB) {
+		this.CB = CB;
+	}
 }
