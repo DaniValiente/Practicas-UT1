@@ -33,7 +33,8 @@
       <TextField fx:id="codigopostal" layoutX="322.0" layoutY="228.0" />
       <TextField fx:id="numerodetelefono" layoutX="329.0" layoutY="318.0" />
       <DatePicker fx:id="fechadenacimiento" layoutX="316.0" layoutY="274.0" />
-      <Button fx:id="clean" layoutX="426.0" layoutY="361.0" mnemonicParsing="false" onAction="#clean" text="Clean" />
-      <Button fx:id="save" layoutX="510.0" layoutY="361.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="clean" layoutX="380.0" layoutY="361.0" mnemonicParsing="false" onAction="#clean" text="Clean" />
+      <Button fx:id="save" layoutX="470.0" layoutY="361.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="exit" layoutX="545.0" layoutY="361.0" mnemonicParsing="false" onAction="#exit" text="Exit" />
       </children>
 </AnchorPane>
